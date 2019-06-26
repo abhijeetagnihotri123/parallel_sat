@@ -63,9 +63,11 @@ int main()
                 clauses.push_back(dummyclauses[i]);
             }
         }
-        cout<<dummyclauses.size()<<endl;
         dummyclauses.clear();
-        cout<<clauses.size();
+        if(clauses.size()!=numclauses)
+        {
+            cout<<"Warning number of clauses provided and mentioned are not equal\n";
+        }
     }
     else
     {
